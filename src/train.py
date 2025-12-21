@@ -72,5 +72,6 @@ def train_model(model, x_train, y_train, x_test, y_test, epochs=50, batch_size=3
         "FP": FP,
         "FN": FN
     }
+    model.save("model.h5")
 
     return model, results
